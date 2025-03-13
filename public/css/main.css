@@ -1,0 +1,999 @@
+/* ============================= */
+/*          Variables           */
+/* ============================= */
+:root {
+    --color-white: #FDFFFC;
+    --color-dark: #373737;
+    --color-blue: #4489C5;
+    --color-lightdark: #6d6d6d;
+    --color-lightgrey: #b3b3b3;
+    --color-highlight: #64b5f6;
+    /* New bright blue color for contact info */
+    /* ...existing code... */
+}
+
+/* ============================= */
+/*          Base Styles         */
+/* ============================= */
+body {
+    background-color: var(--color-white);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+    /* Increased to account for navbar + section padding */
+}
+
+/* Remove the previous section padding and margin adjustments */
+
+/* ============================= */
+/*         Components           */
+/* ============================= */
+.navblock {
+    font-size: 1.5em;
+    margin-left: 100px !important;
+    /* Increased spacing */
+}
+
+.navblock .navelement a {
+    font-size: 18px;
+    color: var(--color-white);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.navblock .navelement a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    transition: width 0.3s ease;
+}
+
+.navblock .navelement a:hover {
+    color: var(--color-white);
+}
+
+.navblock .navelement a:hover::after {
+    width: 100%;
+}
+
+.blur-image {
+    filter: blur(1px);
+    /* Reduced blur */
+    transform-origin: center;
+    animation: zoomEffect 20s infinite alternate;
+}
+
+@keyframes zoomEffect {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.service_img_left,
+.service_img_right {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+/* Add new service section styles */
+.service-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 35px 40px;
+    margin: 15px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-container h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.service-container:hover h3 {
+    color: #4489C5;
+}
+
+.service-container p {
+    color: #505c6c;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 1.1em;
+    letter-spacing: 0.2px;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.uk-section-small {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    /* Adjust as needed */
+}
+
+.team-img {
+    width: 200px;
+    /* Fixed width */
+    height: 200px;
+    /* Equal height for perfect circle */
+    object-fit: cover;
+    object-position: center 20%;
+    margin-bottom: 8px;
+    /* Reduced from 15px to 8px */
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    /* Make it circular */
+}
+
+header {
+    background-color: var(--color-blue) !important;
+    /* Adjust as needed */
+}
+
+.uk-navbar-container {
+    background-color: var(--color-blue) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+    /* Added shadow */
+    position: relative;
+    /* Ensure shadow is visible */
+    z-index: 1000;
+    /* Keep navbar above other elements */
+}
+
+.header_text {
+    color: var(--color-white);
+}
+
+.header_text:hover {
+    color: var(--color-dark);
+}
+
+.logo {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 50px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.insta-logo,
+.mobile-logo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+.mobile-logo {
+    width: 100%;
+    max-width: 250px;
+    /* Increased from 180px */
+    height: auto;
+    object-fit: contain;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.align-center {
+    align-items: center;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.slideshow-text {
+    font-size: 3em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.85);
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.slideshow-subtext {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    color: var(--color-lightgrey);
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer .uk-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .uk-list li {
+    margin-bottom: 5px;
+}
+
+.uk-table {
+    padding-top: 0;
+    margin-top: -10px;
+}
+
+.uk-text-large {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.uk-link-heading:hover {
+    text-decoration: none;
+}
+
+/* Add new styles for contact information */
+.footer a[href^="tel:"],
+.footer a[href^="mailto:"],
+a[href^="tel:"],
+a[href^="mailto:"] {
+    color: var(--color-highlight);
+    transition: color 0.3s ease;
+}
+
+.footer a[href^="tel:"]:hover,
+.footer a[href^="mailto:"]:hover,
+a[href^="tel:"]:hover,
+a[href^="mailto:"]:hover {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* Update contact section styles */
+#contact p,
+#contact h3 {
+    color: var(--color-white);
+}
+
+#contact a[href^="tel:"],
+#contact a[href^="mailto:"] {
+    color: var(--color-highlight);
+    font-weight: 500;
+}
+
+#contact a[href^="tel:"]:hover,
+#contact a[href^="mailto:"]:hover {
+    color: var(--color-lightgrey);
+}
+
+/* ============================= */
+/*           Sections           */
+/* ============================= */
+.uk-section-primary {
+    background-color: #f0f4f8;
+    color: #2c3e50;
+}
+
+.uk-section-primary .uk-card {
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uk-section-primary .uk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.uk-section-primary .uk-card h3,
+.uk-section-primary .uk-card p {
+    color: #2c3e50;
+    /* Dark text for card content */
+}
+
+.uk-section-primary h1 {
+    color: #2c3e50;
+    /* Dark text for section heading */
+}
+
+.uk-section-primary h1 span {
+    color: #2c3e50;
+}
+
+.uk-section-muted {
+    background-color: #f8f9fa;
+}
+
+.uk-section-secondary {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.uk-section-cars {
+    background-color: #373737;
+    color: #fff;
+}
+
+.uk-section-cars h1 span,
+.uk-section-cars p,
+.uk-section-cars .uk-text-emphasis {
+    color: #fff;
+}
+
+.uk-section-secondary h1 span,
+.uk-section-secondary h3,
+.uk-section-secondary p {
+    color: #fff;
+}
+
+.uk-section-default {
+    background-color: #fff;
+}
+
+.uk-section {
+    padding-top: 40px;
+    /* Reduced from 70px */
+    padding-bottom: 70px;
+}
+
+.uk-section:first-of-type {
+    padding-top: 20px;
+    /* Reduced from 40px */
+}
+
+.about-team-image {
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile menu styles */
+.uk-offcanvas-bar {
+    background: var(--color-blue);
+}
+
+.uk-offcanvas-bar .uk-nav-default>li>a {
+    color: var(--color-white);
+    font-size: 1.2em;
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.uk-offcanvas-bar .uk-nav-default>li>a:hover {
+    color: var(--color-white);
+    padding-left: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.uk-offcanvas-close {
+    color: var(--color-white);
+}
+
+/* ============================= */
+/*        Media Queries         */
+/* ============================= */
+
+/* Consolidate repeated @media (max-width: 640px) */
+@media (max-width: 640px) {
+    .footer .uk-grid>div {
+        margin-bottom: 20px;
+    }
+
+    .navblock {
+        font-size: 1em;
+    }
+
+    .navblock .navelement a {
+        font-size: 16px;
+    }
+
+    .slideshow-text {
+        font-size: 2em;
+    }
+
+    .slideshow-subtext {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    /* Merged .logo definitions */
+    .logo {
+        max-height: 25px;
+        max-width: 80px;
+    }
+
+    .nav-responsive {
+        /* Additional mobile-specific styling */
+        /* ...existing code... */
+    }
+
+    /* ...additional responsive styles... */
+}
+
+/* Other media queries (if any) */
+@media (max-width: 959px) {
+    .header_text {
+        font-size: 1.2em;
+        padding: 0 !important;
+    }
+
+    .logo {
+        max-height: 35px;
+        margin-right: 10px;
+    }
+
+    .header-curve-container {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block !important;
+        color: var(--color-white) !important;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+    .nav-responsive {
+        padding: 10px;
+        position: relative;
+    }
+
+    .logo {
+        max-height: 40px;
+        z-index: 1;
+    }
+
+    .uk-navbar-toggle {
+        margin-right: 15px;
+        z-index: 1;
+    }
+
+    .comparison-container {
+        height: 300px;
+    }
+
+    .uk-position-center-left,
+    .uk-position-center-right {
+        top: calc(150px + 20px);
+        /* Half of mobile container height (300px/2) plus padding */
+    }
+}
+
+@media (min-width: 960px) {
+    .uk-navbar-container {
+        min-height: 100px;
+        /* Increased from 80px */
+    }
+
+    .uk-navbar-left {
+        padding-left: 40px;
+        /* Increased padding */
+    }
+
+    .uk-navbar-right {
+        padding-right: 40px;
+        /* Increased padding */
+    }
+
+    .uk-navbar-center {
+        transform: none !important;
+    }
+
+    .header_text {
+        font-size: 2em;
+        /* Increased font size for desktop */
+        padding-right: 0;
+        /* Remove previous padding */
+        padding-left: 320px;
+    }
+
+    .logo {
+        max-height: 70px;
+        /* Increased from 50px to match new navbar height */
+        margin-right: 10;
+        transform: scaleX(-1);
+        /* Remove margin since we're using padding */
+    }
+
+    .navblock {
+        margin-left: 100px !important;
+        /* Even more spacing for desktop */
+    }
+
+    .nav-responsive {
+        /* Desktop-specific styling */
+        /* ...existing code... */
+    }
+
+    .header-curve-container {
+        margin-left: -150px;
+        /* Adjusted for desktop */
+    }
+
+    .header_text {
+        font-size: 2em;
+        padding-right: 0;
+        /* Remove previous padding */
+    }
+}
+
+.nav-responsive {
+    /* General nav styling that applies to all screen sizes */
+    display: flex;
+    justify-content: space-between;
+    /* ...existing code... */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+}
+
+.nav-responsive .nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav-responsive .nav-flex .navblock {
+    margin-left: auto;
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .nav-responsive {
+        /* Tablet-specific styling */
+        /* ...existing code... */
+    }
+}
+
+/* Add these new styles for the curved header */
+.header-curve-container {
+    position: relative;
+    padding: 20px 20px;
+    margin-right: 100px !important;
+    margin-left: -2500px !important;
+    /* Reduced further */
+    padding-left: 2500px !important;
+    /* Reduced to match */
+    min-width: 500px;
+    /* Increased minimum width */
+    overflow: visible;
+    left: 50px;
+    /* Add left offset */
+}
+
+.header_text {
+    position: relative;
+    z-index: 1;
+    color: var(--color-blue) !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    padding-left: 160px;
+    /* Increased padding */
+    margin-left: 40px;
+    /* Increased margin */
+    white-space: nowrap;
+    width: auto;
+    left: 20px;
+    /* Add left offset */
+}
+
+.header-curve-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -100px;
+    /* Increased negative right margin */
+    bottom: 0;
+    background-color: var(--color-white);
+    border-top-right-radius: 1000px;
+    border-bottom-right-radius: 0;
+    transform: skewX(15deg);
+    /* Increased skew angle */
+    z-index: 0;
+}
+
+.header_text {
+    position: relative;
+    z-index: 1;
+    color: var(--color-blue) !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-flex {
+    margin-left: -250px !important;
+    /* Adjusted to match new positioning */
+}
+
+/* Update navbar styles */
+.nav-responsive {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile styles */
+@media (max-width: 959px) {
+    .header-curve-container {
+        display: none;
+        /* Hide curved container on mobile */
+    }
+
+    .mobile-title {
+        display: block !important;
+        color: var(--color-white) !important;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-responsive {
+        padding: 10px;
+    }
+
+    .logo {
+        max-height: 40px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 960px) {
+    .mobile-title {
+        display: none !important;
+        /* Hide mobile title on desktop */
+    }
+
+    .header-curve-container {
+        /* ...existing header-curve-container code... */
+    }
+
+    .nav-flex {
+        margin-left: -250px !important;
+    }
+}
+
+/* Update burger menu color */
+.uk-navbar-toggle {
+    color: var(--color-white) !important;
+}
+
+.uk-navbar-toggle:hover {
+    color: var(--color-dark) !important;
+}
+
+/* Cookie Banner Styles */
+.cookie-banner {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-top: 1px solid #eee;
+}
+
+.cookie-banner p {
+    color: #2c3e50;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.cookie-banner .uk-button-primary {
+    background-color: var(--color-blue);
+    color: white;
+    border-radius: 4px;
+}
+
+.cookie-banner .uk-button-link {
+    color: var(--color-blue);
+}
+
+/* Privacy Modal Styles */
+.uk-modal-dialog {
+    border-radius: 8px;
+}
+
+.uk-modal-title {
+    color: var(--color-dark);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#privacy-modal .uk-modal-body {
+    padding: 30px;
+}
+
+#privacy-modal h3 {
+    color: var(--color-dark);
+    font-size: 1.4em;
+    margin-top: 25px;
+}
+
+#privacy-modal h4 {
+    color: var(--color-lightdark);
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#privacy-modal p {
+    color: #505c6c;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Image Comparison Styles */
+.image-compare-container {
+    position: relative;
+    /* Add this */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.comparison-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: ew-resize;
+}
+
+/* Add hint overlay */
+.comparison-container::after {
+    content: 'Ziehen Sie nach links oder rechts';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 200;
+    white-space: nowrap;
+    backdrop-filter: blur(4px);
+}
+
+.comparison-container:hover::after {
+    opacity: 1;
+}
+
+.before-image,
+.after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.after-image {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: ew-resize;
+    margin: 0;
+    z-index: 100;
+}
+
+.slider-button {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-button::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.slider-button::after {
+    content: '↔';
+    position: absolute;
+    color: #333;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.comparison-container:hover .slider-button::before {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove before/after labels */
+.before-label,
+.after-label {
+    display: none;
+}
+
+/* Add arrows and navigation styles */
+.uk-slidenav-previous,
+.uk-slidenav-next {
+    background: rgba(255, 255, 255, 0.9);
+    color: #666;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.uk-slidenav-previous:hover,
+.uk-slidenav-next:hover {
+    background: #fff;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider Navigation Styles */
+.uk-slider-container {
+    padding: 0;
+}
+
+.uk-slidenav-previous,
+.uk-slidenav-next {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #333 !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.uk-slidenav-previous:hover,
+.uk-slidenav-next:hover {
+    background: #fff !important;
+    color: var(--color-blue) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Update Navigation Arrows Position */
+.uk-position-center-left,
+.uk-position-center-right {
+    top: calc(250px + 20px);
+    /* Half of comparison container height (500px/2) plus padding */
+    transform: translateY(-50%);
+}
+
+/* Project Description Styles */
+.image-compare-container h3 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.image-compare-container p {
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 959px) {
+    .comparison-container {
+        height: 300px;
+    }
+
+    .uk-position-center-left,
+    .uk-position-center-right {
+        top: calc(150px + 20px);
+        /* Half of mobile container height (300px/2) plus padding */
+    }
+}
+
+/* ============================= */
+/*       End of File            */
+/* ============================= */
