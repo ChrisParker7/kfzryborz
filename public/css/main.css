@@ -1280,6 +1280,11 @@ a[href^="mailto:"]:hover {
         object-fit: cover;
     }
 
+    /* Hide desktop drag hint in mobile/tablet */
+    .comparison-container::after {
+        display: none !important;
+    }
+
     /* Hide slider button in mobile/tablet */
     .slider-button {
         display: none !important;
