@@ -18,20 +18,20 @@
     <header>
         <nav class="uk-navbar-container nav-responsive" uk-navbar
             uk-sticky="top: 0; animation: uk-animation-slide-top;">
-            <!-- Only show logo on left for mobile/tablet -->
-            <div>
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo uk-navbar-item uk-hidden@l">
+            <!-- Mobile: Logo left -->
+            <div class="uk-hidden@l">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo uk-navbar-item">
             </div>
-            <!-- Add mobile-specific title -->
+
+            <!-- Mobile: Title center -->
             <div class="mobile-title uk-hidden@l">
                 KFZ Service Ryborz
             </div>
-            <div class="nav-flex">
-                <div class="header-curve-container uk-visible@l">
-                    <a class="header_text uk-navbar-item uk-logo" href="/">KFZ Service Ryborz</a>
-                </div>
-                <!-- Desktop menu -->
-                <ul class="uk-navbar-nav navblock uk-visible@l">
+
+            <!-- Desktop: Brand and Nav -->
+            <div class="nav-flex uk-visible@l">
+                <a class="header_text uk-navbar-item uk-logo" href="/">KFZ Service Ryborz</a>
+                <ul class="uk-navbar-nav navblock">
                     <li class="navelement"><a href="#about">Über uns</a></li>
                     <li class="navelement"><a href="#cars">Fahrzeuge</a></li>
                     <li class="navelement"><a href="#services">Dienstleistungen</a></li>
@@ -41,10 +41,10 @@
                     <li class="navelement"><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
+
+            <!-- Right side: Logo (desktop) / Burger (mobile) -->
             <div>
-                <!-- Desktop logo -->
                 <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo uk-navbar-item uk-visible@l">
-                <!-- Mobile/Tablet burger menu -->
                 <a class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon href="#"
                     uk-toggle="target: #mobile-menu"></a>
             </div>
@@ -130,7 +130,7 @@
             <h1 class="uk-text-center"><span>Über uns</span></h1>
             <p class="uk-margin uk-text-center uk-margin-large-left uk-margin-large-right">
                 Willkommen bei KFZ Service Waldemar Ryborz, Ihrer freundlichen Kfz-Werkstatt in Untermeitingen.<br>
-                Seit über 14 Jahren sind wir Ihr verlässlicher Partner rund um Ihr Auto. Unser Ziel ist es, Ihnen den
+                Seit über 15 Jahren sind wir Ihr verlässlicher Partner rund um Ihr Auto. Unser Ziel ist es, Ihnen den
                 besten Service zu bieten –
                 schnell, professionell und fair.<br><br>Egal, ob es um regelmäßige Wartungen, Reparaturen oder spezielle
                 Anliegen geht – wir sind für Sie da.
