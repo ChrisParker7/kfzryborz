@@ -4,37 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>KFZ Service Waldemar Ryborz - Meisterwerkstatt in Untermeitingen | Auto Reparatur & Lackierung</title>
     <meta name="title" content="KFZ Service Waldemar Ryborz - Meisterwerkstatt in Untermeitingen">
-    <meta name="description" content="KFZ Meisterwerkstatt in Untermeitingen ✓ Reparatur ✓ Lackierung ✓ Karosseriearbeiten ✓ TÜV/AU ✓ Unfallinstandsetzung. Professioneller Service für Ihr Fahrzeug. Jetzt Termin vereinbaren!">
-    <meta name="keywords" content="KFZ Werkstatt Untermeitingen, Auto Reparatur Augsburg, Lackierung, Karosseriearbeiten, TÜV, HU, AU, Unfallinstandsetzung, Meisterwerkstatt, Fahrzeuglackierung, Waldemar Ryborz">
+    <meta name="description"
+        content="KFZ Meisterwerkstatt in Untermeitingen ✓ Reparatur ✓ Lackierung ✓ Karosseriearbeiten ✓ TÜV/AU ✓ Unfallinstandsetzung. Professioneller Service für Ihr Fahrzeug. Jetzt Termin vereinbaren!">
+    <meta name="keywords"
+        content="KFZ Werkstatt Untermeitingen, Auto Reparatur Augsburg, Lackierung, Karosseriearbeiten, TÜV, HU, AU, Unfallinstandsetzung, Meisterwerkstatt, Fahrzeuglackierung, Waldemar Ryborz">
     <meta name="author" content="KFZ Service Waldemar Ryborz">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kfz-ryborz.de/">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kfz-ryborz.de/">
     <meta property="og:title" content="KFZ Service Waldemar Ryborz - Meisterwerkstatt in Untermeitingen">
-    <meta property="og:description" content="KFZ Meisterwerkstatt in Untermeitingen ✓ Reparatur ✓ Lackierung ✓ Karosseriearbeiten ✓ TÜV/AU. Professioneller Service für Ihr Fahrzeug.">
+    <meta property="og:description"
+        content="KFZ Meisterwerkstatt in Untermeitingen ✓ Reparatur ✓ Lackierung ✓ Karosseriearbeiten ✓ TÜV/AU. Professioneller Service für Ihr Fahrzeug.">
     <meta property="og:image" content="{{ asset('images/logo.png') }}">
     <meta property="og:locale" content="de_DE">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://kfz-ryborz.de/">
     <meta property="twitter:title" content="KFZ Service Waldemar Ryborz - Meisterwerkstatt in Untermeitingen">
-    <meta property="twitter:description" content="KFZ Meisterwerkstatt in Untermeitingen ✓ Reparatur ✓ Lackierung ✓ Karosseriearbeiten ✓ TÜV/AU">
+    <meta property="twitter:description"
+        content="KFZ Meisterwerkstatt in Untermeitingen ✓ Reparatur ✓ Lackierung ✓ Karosseriearbeiten ✓ TÜV/AU">
     <meta property="twitter:image" content="{{ asset('images/logo.png') }}">
-    
+
     <!-- Geo Tags -->
     <meta name="geo.region" content="DE-BY">
     <meta name="geo.placename" content="Untermeitingen">
     <meta name="geo.position" content="48.1764;10.8558">
     <meta name="ICBM" content="48.1764, 10.8558">
-    
+
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
     {
@@ -100,8 +104,8 @@
 
 <body>
     <header>
-        <nav class="uk-navbar-container nav-responsive" uk-navbar
-            uk-sticky="top: 0; animation: uk-animation-slide-top;" role="navigation" aria-label="Hauptnavigation">
+        <nav class="uk-navbar-container nav-responsive" uk-navbar uk-sticky="top: 0; animation: uk-animation-slide-top;"
+            role="navigation" aria-label="Hauptnavigation">
             <!-- Mobile: Logo left -->
             <div class="uk-hidden@l">
                 <img src="{{ asset('images/logo.png') }}" alt="KFZ Service Ryborz Logo" class="logo uk-navbar-item">
@@ -128,9 +132,10 @@
 
             <!-- Right side: Logo (desktop) / Burger (mobile) -->
             <div>
-                <img src="{{ asset('images/logo.png') }}" alt="KFZ Service Ryborz Logo" class="logo uk-navbar-item uk-visible@l">
-                <a class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon href="#"
-                    uk-toggle="target: #mobile-menu" aria-label="Navigation öffnen"></a>
+                <img src="{{ asset('images/logo.png') }}" alt="KFZ Service Ryborz Logo"
+                    class="logo uk-navbar-item uk-visible@l">
+                <a class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon href="#" uk-toggle="target: #mobile-menu"
+                    aria-label="Navigation öffnen"></a>
             </div>
         </nav>
 
@@ -156,7 +161,8 @@
 
         <ul class="uk-slideshow-items">
             <li>
-                <img src="{{ asset('images/slide1.jpg') }}" alt="KFZ Werkstatt Untermeitingen - Professionelle Fahrzeugreparatur" uk-cover class="blur-image">
+                <img src="{{ asset('images/slide1.jpg') }}"
+                    alt="KFZ Werkstatt Untermeitingen - Professionelle Fahrzeugreparatur" uk-cover class="blur-image">
                 <div class="uk-position-center uk-position-small uk-text-center">
                     <h2 class="uk-margin-remove slideshow-text">Ihr Fahrzeug, unsere Leidenschaft</h2>
                     <p class="uk-margin-remove slideshow-subtext">Verlassen Sie sich auf unsere jahrelange Erfahrung
@@ -166,7 +172,8 @@
                 </div>
             </li>
             <li>
-                <img src="{{ asset('images/slide2.jpg') }}" alt="Fahrzeuglackierung und Karosseriearbeiten in Untermeitingen" uk-cover class="blur-image">
+                <img src="{{ asset('images/slide2.jpg') }}"
+                    alt="Fahrzeuglackierung und Karosseriearbeiten in Untermeitingen" uk-cover class="blur-image">
                 <div class="uk-position-center uk-position-small uk-text-center">
                     <h2 class="uk-margin-remove slideshow-text">Service, der Vertrauen schafft</h2>
                     <p class="uk-margin-remove slideshow-subtext">Ob Inspektion, Reparatur oder Unfallinstandsetzung –
@@ -175,7 +182,8 @@
                 </div>
             </li>
             <li>
-                <img src="{{ asset('images/slide3.jpg') }}" alt="Meisterwerkstatt für alle Fahrzeugmarken" uk-cover class="blur-image">
+                <img src="{{ asset('images/slide3.jpg') }}" alt="Meisterwerkstatt für alle Fahrzeugmarken" uk-cover
+                    class="blur-image">
                 <div class="uk-position-center uk-position-small uk-text-center">
                     <h2 class="uk-margin-remove slideshow-text">Technologie trifft Handwerkskunst</h2>
                     <p class="uk-margin-remove slideshow-subtext">Moderne Diagnosetechnik kombiniert mit klassischer
@@ -184,7 +192,8 @@
                 </div>
             </li>
             <li>
-                <img src="{{ asset('images/slide4.jpg') }}" alt="TÜV und Hauptuntersuchung - Ihr Prüfstützpunkt" uk-cover class="blur-image">
+                <img src="{{ asset('images/slide4.jpg') }}" alt="TÜV und Hauptuntersuchung - Ihr Prüfstützpunkt"
+                    uk-cover class="blur-image">
                 <div class="uk-position-center uk-position-small uk-text-center">
                     <h2 class="uk-margin-remove slideshow-text">Individuelle Lösungen</h2>
                     <p class="uk-margin-remove slideshow-subtext">Jedes Fahrzeug ist einzigartig - genau wie unsere
@@ -193,7 +202,8 @@
                 </div>
             </li>
             <li>
-                <img src="{{ asset('images/slide5.jpg') }}" alt="Unfallinstandsetzung und Versicherungsabwicklung" uk-cover class="blur-image">
+                <img src="{{ asset('images/slide5.jpg') }}" alt="Unfallinstandsetzung und Versicherungsabwicklung"
+                    uk-cover class="blur-image">
                 <div class="uk-position-center uk-position-small uk-text-center">
                     <h2 class="uk-margin-remove slideshow-text">Oldtimer & Youngtimer</h2>
                     <p class="uk-margin-remove slideshow-subtext">Klassiker verdienen besondere Aufmerksamkeit.<br>
@@ -602,7 +612,7 @@
                     <div class="uk-card uk-card-default uk-card-body uk-text-center">
                         <img src="{{ asset('images/team/mitarbeiter4.png') }}" alt="Christian Przegendza"
                             class="uk-border-circle team-img">
-                        <h3>Christian Przegendza</h3>
+                        <h3>Krystian Przegendza</h3>
                         <p>Geselle</p>
                     </div>
                 </div>
