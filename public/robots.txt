@@ -1,2 +1,19 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemaps
+Sitemap: https://kfz-ryborz.de/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Disallow admin areas
+Disallow: /admin
+Disallow: /login
+Disallow: /api/
+
+# Allow important pages
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
