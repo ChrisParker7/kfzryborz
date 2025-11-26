@@ -726,7 +726,6 @@
                                     </div>
                                 </div>
                             </li>
-                            <!--
                             <li class="uk-width-1-1">
                                 <div class="uk-flex uk-flex-center">
                                     <div class="image-compare-container">
@@ -743,13 +742,13 @@
                                         </div>
                                         <div class="uk-text-center uk-margin-small-top">
                                             <h3>Chevrolet Camaro V8</h3>
-                                            <p>Professionelle Lackaufbereitung und Detailing. Der kraftvolle
-                                                V8-Muscle-Car präsentiert sich in bestem Zustand.</p>
+                                            <p>Professionelle Reparatur eines Seitenschadens mit anschließender
+                                                hochwertiger Neulackierung. Der amerikanische Muscle-Car erstrahlt
+                                                wieder in neuem Glanz.</p>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            -->
                             <!-- Add more projects here with the same structure -->
                         </ul>
                     </div>
