@@ -310,8 +310,9 @@
                     uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                     <div class="service-container">
                         <h3>Fahrzeuglackierung</h3>
-                        <p>Egal ob Kratzer oder eine komplette Neulackierung – unsere Lackiererei sorgt für
-                            professionelle Ergebnisse und brillante Farben. Wir verwenden hochwertige Materialien für
+                        <p>Egal ob Kratzer oder eine komplette Neulackierung – in Zusammenarbeit mit unserer
+                            Partnerlackiererei sorgen wir für professionelle Ergebnisse und brillante Farben. Wir
+                            verwenden hochwertige Materialien für
                             eine langanhaltende, makellose Optik.</p>
                     </div>
                 </div>
@@ -353,6 +354,7 @@
                         <h3>HU-/AU-Service</h3>
                         <p>Wir bereiten Ihr Fahrzeug für die Hauptuntersuchung (HU) und die Abgasuntersuchung (AU) vor
                             und führen diese direkt bei uns durch. So bleibt Ihr Auto zuverlässig und straßentauglich.
+                            In Zusammenarbeit mit anerkannter Prüforganisation.
                         </p>
                     </div>
                 </div>
@@ -372,7 +374,7 @@
                     uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                     <div class="service-container">
                         <h3>Reifenservice</h3>
-                        <p>Unser Reifenservice umfasst Montage, Auswuchten und Einlagerung Ihrer Sommer- und
+                        <p>Unser Reifenservice umfasst Montage und Auswuchten ihrer Sommer- und
                             Winterreifen. Damit sorgen wir für optimale Fahrsicherheit und Komfort zu jeder Jahreszeit.
                         </p>
                     </div>
@@ -445,7 +447,9 @@
                     uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                     <div class="service-container">
                         <h3>Abschleppservice</h3>
-                        <p>Bei einer Panne oder einem Unfall sind wir rund um die Uhr für Sie da. Unser professioneller
+                        <p>Für unsere Kunden sind wir bei einer Panne oder einem Unfall zu unseren Geschäftszeiten immer
+                            für Sie da. Unser
+                            professioneller
                             Abschleppservice bringt Ihr Fahrzeug sicher in unsere Werkstatt oder an den gewünschten
                             Zielort.</p>
                     </div>
@@ -651,8 +655,7 @@
                                         </div>
                                         <div class="uk-text-center uk-margin-small-top">
                                             <h3>Pontiac Firebird Trans Am</h3>
-                                            <p>Komplette Lackaufbereitung mit professioneller Politur. Der amerikanische
-                                                Muscle Car erstrahlt wieder in neuem Glanz.</p>
+                                            <p>Komplette Neulackierung.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -672,9 +675,9 @@
                                             <div class="after-label">Nachher</div>
                                         </div>
                                         <div class="uk-text-center uk-margin-small-top">
-                                            <h3>Bus</h3>
-                                            <p>Umfassende Karosseriearbeiten und Neulackierung. Rostbeseitigung und
-                                                vollständige Restaurierung des Fahrzeugs.</p>
+                                            <h3>VW T3 Camper</h3>
+                                            <p>Umfassende Karosseriearbeiten und Teillackierung inkl. professioneller
+                                                Politur und Rostbeseitigung.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -723,6 +726,7 @@
                                     </div>
                                 </div>
                             </li>
+                            <!--
                             <li class="uk-width-1-1">
                                 <div class="uk-flex uk-flex-center">
                                     <div class="image-compare-container">
@@ -745,6 +749,7 @@
                                     </div>
                                 </div>
                             </li>
+                            -->
                             <!-- Add more projects here with the same structure -->
                         </ul>
                     </div>
