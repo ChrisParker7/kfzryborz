@@ -498,9 +498,10 @@
                 <img src="{{ asset('images/dienstleistungen/lackierung.png') }}" alt="Fahrzeuglackierung"
                     class="service-mobile-img">
                 <h3>Fahrzeuglackierung</h3>
-                <p>Egal ob Kratzer oder eine komplette Neulackierung – unsere Lackiererei sorgt für professionelle
-                    Ergebnisse und brillante Farben. Wir verwenden hochwertige Materialien für eine langanhaltende,
-                    makellose Optik.</p>
+                <p>Egal ob Kratzer oder eine komplette Neulackierung – in Zusammenarbeit mit unserer
+                    Partnerlackiererei sorgen wir für professionelle Ergebnisse und brillante Farben. Wir
+                    verwenden hochwertige Materialien für
+                    eine langanhaltende, makellose Optik.</p>
             </div>
 
             <div class="service-mobile-card">
@@ -523,16 +524,17 @@
                 <img src="{{ asset('images/dienstleistungen/untersuchung.png') }}" alt="HU-/AU-Service"
                     class="service-mobile-img">
                 <h3>HU-/AU-Service</h3>
-                <p>Wir bereiten Ihr Fahrzeug für die Hauptuntersuchung (HU) und die Abgasuntersuchung (AU) vor und
-                    führen diese direkt bei uns durch. So bleibt Ihr Auto zuverlässig und straßentauglich.</p>
+                <p>Wir bereiten Ihr Fahrzeug für die Hauptuntersuchung (HU) und die Abgasuntersuchung (AU) vor
+                    und führen diese direkt bei uns durch. So bleibt Ihr Auto zuverlässig und straßentauglich.
+                    In Zusammenarbeit mit anerkannter Prüforganisation.</p>
             </div>
 
             <div class="service-mobile-card">
                 <img src="{{ asset('images/dienstleistungen/reifenservice.png') }}" alt="Reifenservice"
                     class="service-mobile-img">
                 <h3>Reifenservice</h3>
-                <p>Unser Reifenservice umfasst Montage, Auswuchten und Einlagerung Ihrer Sommer- und Winterreifen. Damit
-                    sorgen wir für optimale Fahrsicherheit und Komfort zu jeder Jahreszeit.</p>
+                <p>Unser Reifenservice umfasst Montage und Auswuchten ihrer Sommer- und
+                    Winterreifen. Damit sorgen wir für optimale Fahrsicherheit und Komfort zu jeder Jahreszeit.</p>
             </div>
 
             <div class="service-mobile-card">
@@ -571,8 +573,11 @@
                 <img src="{{ asset('images/dienstleistungen/abschleppdienst.png') }}" alt="Abschleppservice"
                     class="service-mobile-img">
                 <h3>Abschleppservice</h3>
-                <p>Bei einer Panne oder einem Unfall sind wir rund um die Uhr für Sie da. Unser professioneller
-                    Abschleppservice bringt Ihr Fahrzeug sicher in unsere Werkstatt oder an den gewünschten Zielort.</p>
+                <p>Für unsere Kunden sind wir bei einer Panne oder einem Unfall zu unseren Geschäftszeiten immer
+                    für Sie da. Unser
+                    professioneller
+                    Abschleppservice bringt Ihr Fahrzeug sicher in unsere Werkstatt oder an den gewünschten
+                    Zielort.</p>
             </div>
 
             <div class="service-mobile-card">
