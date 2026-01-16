@@ -124,6 +124,7 @@
                     <li class="navelement"><a href="#cars">Fahrzeuge</a></li>
                     <li class="navelement"><a href="#services">Dienstleistungen</a></li>
                     <li class="navelement"><a href="#team">Das Team</a></li>
+                    <li class="navelement"><a href="#jobs">Jobs</a></li>
                     <li class="navelement"><a href="#projects">Unsere Projekte</a></li>
                     <li class="navelement"><a href="#hours">Öffnungszeiten</a></li>
                     <li class="navelement"><a href="#contact">Kontakt</a></li>
@@ -140,18 +141,71 @@
         </nav>
 
         <!-- Mobile menu offcanvas -->
-        <div id="mobile-menu" uk-offcanvas="overlay: true; flip: true">
-            <div class="uk-offcanvas-bar">
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <ul class="uk-nav uk-nav-default">
-                    <li><a href="#about" uk-scroll uk-toggle="target: #mobile-menu">Über uns</a></li>
-                    <li><a href="#cars" uk-scroll uk-toggle="target: #mobile-menu">Fahrzeuge</a></li>
-                    <li><a href="#services" uk-scroll uk-toggle="target: #mobile-menu">Dienstleistungen</a></li>
-                    <li><a href="#team" uk-scroll uk-toggle="target: #mobile-menu">Das Team</a></li>
-                    <li><a href="#projects" uk-scroll uk-toggle="target: #mobile-menu">Unsere Projekte</a></li>
-                    <li><a href="#hours" uk-scroll uk-toggle="target: #mobile-menu">Öffnungszeiten</a></li>
-                    <li><a href="#contact" uk-scroll uk-toggle="target: #mobile-menu">Kontakt</a></li>
-                </ul>
+        <div id="mobile-menu" class="mobile-drawer" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar mobile-drawer-bar">
+                <div class="mobile-drawer-header">
+                    <img src="{{ asset('images/logo.png') }}" alt="KFZ Service Ryborz Logo" class="mobile-drawer-logo">
+                    <h3 class="mobile-drawer-title">KFZ Service Ryborz</h3>
+                    <button class="uk-offcanvas-close mobile-drawer-close" type="button" uk-close></button>
+                </div>
+                <nav class="mobile-drawer-nav">
+                    <ul class="mobile-drawer-list">
+                        <li class="mobile-drawer-item">
+                            <a href="#about" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: info; ratio: 1.1"></span>
+                                <span>Über uns</span>
+                            </a>
+                        </li>
+                        <li class="mobile-drawer-item">
+                            <a href="#cars" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: play; ratio: 1.1"></span>
+                                <span>Fahrzeuge</span>
+                            </a>
+                        </li>
+                        <li class="mobile-drawer-item">
+                            <a href="#services" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: cog; ratio: 1.1"></span>
+                                <span>Dienstleistungen</span>
+                            </a>
+                        </li>
+                        <li class="mobile-drawer-item">
+                            <a href="#team" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: users; ratio: 1.1"></span>
+                                <span>Das Team</span>
+                            </a>
+                        </li>
+                        <li class="mobile-drawer-item">
+                            <a href="#jobs" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: file-text; ratio: 1.1"></span>
+                                <span>Jobs</span>
+                            </a>
+                        </li>
+                        <li class="mobile-drawer-item">
+                            <a href="#projects" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: image; ratio: 1.1"></span>
+                                <span>Unsere Projekte</span>
+                            </a>
+                        </li>
+                        <li class="mobile-drawer-item">
+                            <a href="#hours" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: clock; ratio: 1.1"></span>
+                                <span>Öffnungszeiten</span>
+                            </a>
+                        </li>
+                        <li class="mobile-drawer-item">
+                            <a href="#contact" uk-scroll uk-toggle="target: #mobile-menu">
+                                <span uk-icon="icon: receiver; ratio: 1.1"></span>
+                                <span>Kontakt</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-drawer-footer">
+                    <a href="tel:+4982321846279" class="mobile-drawer-contact">
+                        <span uk-icon="icon: phone; ratio: 0.9"></span>
+                        <span>+49 8232 1846279</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -221,43 +275,99 @@
 
     <section id="about" class="uk-section uk-section-default">
         <div class="uk-container">
-            <h1 class="uk-text-center"><span>Über uns</span></h1>
-            <p class="uk-margin uk-text-center uk-margin-large-left uk-margin-large-right">
-                Willkommen bei KFZ Service Waldemar Ryborz, Ihrer freundlichen Kfz-Werkstatt in Untermeitingen.<br>
-                Seit über 15 Jahren sind wir Ihr verlässlicher Partner rund um Ihr Auto. Unser Ziel ist es, Ihnen den
-                besten Service zu bieten –
-                schnell, professionell und fair.<br><br>Egal, ob es um regelmäßige Wartungen, Reparaturen oder spezielle
-                Anliegen geht – wir sind für Sie da.
-            </p>
-            <div class="uk-margin-medium-top uk-margin-medium-bottom uk-flex uk-flex-center">
-                <img src="{{ asset('images/team/gruppe.jpg') }}" alt="Unser Team"
-                    class="uk-width-2-3@m uk-border-rounded about-team-image">
-            </div>
-            <p class="uk-margin uk-text-center uk-margin-large-left uk-margin-large-right">
-                Unser Team besteht aus erfahrenen Mechanikern und Fachleuten, die sich mit Herzblut um Ihr Fahrzeug
-                kümmern. Wir kombinieren modernste Technologie mit traditioneller Handwerkskunst, um sicherzustellen,
-                dass
-                Ihr Auto in den besten Händen ist. Bei uns stehen Qualität und Kundenzufriedenheit an erster Stelle.
 
-                Kommen Sie vorbei und überzeugen Sie sich selbst! Wir freuen uns, Sie und Ihr Fahrzeug kennenzulernen.
-            </p>
+            <div class="about-content-wrapper">
+                <!-- Intro Card -->
+                <div class="about-intro-card">
+                    <h2 class="about-intro-title">Willkommen bei KFZ Service Waldemar Ryborz</h2>
+                    <p class="about-intro-subtitle">Ihre freundliche Kfz-Werkstatt in Untermeitingen</p>
+                    <p class="about-intro-text">
+                        Seit über 15 Jahren sind wir Ihr verlässlicher Partner rund um Ihr Auto. Unser Ziel ist es,
+                        Ihnen den besten Service zu bieten – schnell, professionell und fair. Egal, ob es um regelmäßige
+                        Wartungen, Reparaturen oder spezielle Anliegen geht – wir sind für Sie da.
+                    </p>
+                    <!-- Team Image Inside Card -->
+                    <div class="about-intro-image-container">
+                        <img src="{{ asset('images/team/gruppe.jpg') }}" alt="Unser Team" class="about-intro-team-img">
+                        <div class="about-intro-image-overlay">
+                            <span>Unser Team für Sie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Values Grid -->
+                <div class="about-values-grid">
+                    <div class="about-value-card">
+                        <div class="about-value-icon">
+                            <span uk-icon="icon: users; ratio: 1.5"></span>
+                        </div>
+                        <h3>Erfahrenes Team</h3>
+                        <p>Unsere Mechaniker und Fachleute kümmern sich mit Herzblut um Ihr Fahrzeug.</p>
+                    </div>
+                    <div class="about-value-card">
+                        <div class="about-value-icon">
+                            <span uk-icon="icon: cog; ratio: 1.5"></span>
+                        </div>
+                        <h3>Moderne Technik</h3>
+                        <p>Wir kombinieren modernste Technologie mit traditioneller Handwerkskunst.</p>
+                    </div>
+                    <div class="about-value-card">
+                        <div class="about-value-icon">
+                            <span uk-icon="icon: star; ratio: 1.5"></span>
+                        </div>
+                        <h3>Höchste Qualität</h3>
+                        <p>Bei uns stehen Qualität und Kundenzufriedenheit an erster Stelle.</p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="about-cta">
+                    <p>Kommen Sie vorbei und überzeugen Sie sich selbst!</p>
+                    <a href="#contact" class="about-cta-button" uk-scroll>
+                        <span uk-icon="icon: location; ratio: 1"></span>
+                        Jetzt Kontakt aufnehmen
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="cars" class="uk-section uk-section-cars">
         <div class="uk-container">
             <h1 class="uk-heading-line uk-text-center"><span>Fahrzeuge</span></h1>
-            <div class="uk-text-center">
-                <p class="uk-text-large">
-                    Auf der Suche nach einem neuen Fahrzeug? Entdecken Sie unser aktuelles Angebot an ausgewählten
-                    Fahrzeugen.
-                    Wir bieten regelmäßig gepflegte Gebrauchtwagen zu fairen Preisen an.
-                </p>
-                <div class="uk-margin-medium-top uk-flex uk-flex-center">
+            <div class="cars-content-wrapper">
+                <div class="cars-intro">
+                    <p>Auf der Suche nach einem neuen Fahrzeug? Entdecken Sie unser aktuelles Angebot an ausgewählten
+                        Fahrzeugen. Wir bieten regelmäßig gepflegte Gebrauchtwagen zu fairen Preisen an.</p>
+                </div>
+
+                <div class="cars-features">
+                    <div class="cars-feature-item">
+                        <div class="cars-feature-icon">
+                            <span uk-icon="icon: check; ratio: 1.3"></span>
+                        </div>
+                        <span>Werkstattgeprüft</span>
+                    </div>
+                    <div class="cars-feature-item">
+                        <div class="cars-feature-icon">
+                            <span uk-icon="icon: heart; ratio: 1.3"></span>
+                        </div>
+                        <span>Faire Preise</span>
+                    </div>
+                </div>
+
+                <div class="cars-cta-card">
                     <a href="https://home.mobile.de/KFZSERVICETEILEZUBEHOER#ses" target="_blank"
-                        class="uk-link-heading">
-                        <img src="{{ asset('images/mobile_logo.png') }}" alt="Mobile.de" class="mobile-logo">
-                        <p class="uk-text-large uk-text-bold uk-margin-small-top">Klicken Sie hier, um unser aktuelles
-                            Fahrzeugangebot auf Mobile.de zu sehen</p>
+                        rel="noopener noreferrer" class="cars-cta-link">
+                        <div class="cars-cta-content">
+                            <img src="{{ asset('images/mobile_logo.png') }}" alt="Mobile.de" class="cars-mobile-logo">
+                            <div class="cars-cta-text">
+                                <h3>Unser Fahrzeugangebot auf Mobile.de</h3>
+                                <p>Klicken Sie hier, um alle verfügbaren Fahrzeuge zu entdecken</p>
+                            </div>
+                            <div class="cars-cta-arrow">
+                                <span uk-icon="icon: arrow-right; ratio: 1.5"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -623,6 +733,93 @@
                             class="uk-border-circle team-img">
                         <h3>Krystian Przegendza</h3>
                         <p>Geselle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="uk-section uk-section-jobs">
+        <div class="uk-container">
+            <h1 class="uk-heading-line uk-text-center"><span>Jobs</span></h1>
+            <div class="jobs-wrapper">
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <div class="job-badge">Wir suchen Verstärkung!</div>
+                        <h2 class="job-title">KFZ-Mechaniker / Mechatroniker</h2>
+                        <span class="job-gender">(m/w/d)</span>
+                    </div>
+
+                    <div class="job-card-body">
+                        <div class="job-intro">
+                            <p>Werde Teil unseres dynamischen Teams! Wir suchen einen engagierten KFZ-Mechaniker oder
+                                Mechatroniker, der mit Leidenschaft und Fachwissen unsere Kunden begeistert.</p>
+                        </div>
+
+                        <div class="job-details-grid">
+                            <div class="job-detail-section">
+                                <div class="job-detail-icon">
+                                    <span uk-icon="icon: check; ratio: 1.2"></span>
+                                </div>
+                                <div class="job-detail-content">
+                                    <h4>Deine Aufgaben</h4>
+                                    <ul class="job-list">
+                                        <li>Wartung und Reparatur von Fahrzeugen aller Marken</li>
+                                        <li>Fehlerdiagnose mit modernster Technik</li>
+                                        <li>Kundenberatung bei technischen Fragen</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="job-detail-section">
+                                <div class="job-detail-icon">
+                                    <span uk-icon="icon: user; ratio: 1.2"></span>
+                                </div>
+                                <div class="job-detail-content">
+                                    <h4>Dein Profil</h4>
+                                    <ul class="job-list">
+                                        <li>Abgeschlossene Ausbildung als KFZ-Mechaniker/Mechatroniker</li>
+                                        <li>Berufserfahrung wünschenswert</li>
+                                        <li>Leidenschaft für Fahrzeuge aller Art</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="job-detail-section">
+                                <div class="job-detail-icon">
+                                    <span uk-icon="icon: heart; ratio: 1.2"></span>
+                                </div>
+                                <div class="job-detail-content">
+                                    <h4>Wir bieten</h4>
+                                    <ul class="job-list">
+                                        <li>Familiäres Arbeitsumfeld mit flachen Hierarchien</li>
+                                        <li>Abwechslungsreiche Aufgaben von Oldtimer bis Neuwagen</li>
+                                        <li>Faire Vergütung und pünktliche Bezahlung</li>
+                                        <li>Moderne Werkstattausstattung</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-card-footer">
+                        <div class="job-cta">
+                            <p class="job-cta-text">Interesse geweckt? Dann freuen wir uns auf deine Bewerbung!</p>
+                            <div class="job-contact-buttons">
+                                <a href="mailto:kfz.ryborz@t-online.de?subject=Bewerbung als KFZ-Mechaniker/Mechatroniker"
+                                    class="job-btn job-btn-primary">
+                                    <span uk-icon="icon: mail"></span>
+                                    Per E-Mail bewerben
+                                </a>
+                                <a href="tel:+4982321846279" class="job-btn job-btn-secondary">
+                                    <span uk-icon="icon: phone"></span>
+                                    Anrufen
+                                </a>
+                            </div>
+                            <p class="job-address">Oder besuche uns persönlich: Schwabenstraße 48, 86836 Untermeitingen
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
