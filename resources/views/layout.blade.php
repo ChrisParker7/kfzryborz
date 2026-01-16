@@ -707,7 +707,7 @@
                     <div class="uk-card uk-card-default uk-card-body uk-text-center">
                         <img src="{{ asset('images/team/mitarbeiter1.png') }}" alt="Waldemar Ryborz"
                             class="uk-border-circle team-img">
-                        <h3>Waldermar Ryborz</h3>
+                        <h3>Waldemar Ryborz</h3>
                         <p>Geschäftsinhaber</p>
                     </div>
                 </div>
