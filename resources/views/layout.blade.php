@@ -95,7 +95,7 @@
     </script>
 
     <link rel="stylesheet" href="{{ asset("css/uikit.min.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/main.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/main.css") }}?v={{ filemtime(public_path('css/main.css')) }}">
     <link rel="icon" href="{{ asset("favicon.ico") }}" type="image/x-icon">
 
     <!--@yield('css')-->
